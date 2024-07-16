@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+ 
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.svg" alt="Fylo Logo">
+      <ul>
+        <li><a href="index.html">Features</a></li>
+        <li><a href="index.html">Team</a></li>
+        <li><a href="index.html">Sign In</a></li>
+      </ul>
+    </nav>
+    <div class="hero-container">
+      <div class="hero">
+        <picture>
+          <img src="images/illustration-1.svg" alt="">
+        </picture>
+        <div class="text-grid-item">
+          <section class="hero-text-container flex-center">
+            <h1>All your files in one secure<br> location, accessible anywhere.</h1>
+            <p>Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+          </section>
+          <form>
+            <div class="input-container">
+              <input id="hero-input" type="input" placeholder="Enter your email...">
+              <div id="hero-email-error" class="email-message remove">Please check your email</div>
+            </div>
+            <button id="hero-button">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <picture class="bg-curve">
+    <source media="(min-width: 1440px)" srcset="images/bg-curve-desktop.svg">
+    <img src="images/bg-curve-mobile.svg" alt="">
+  </picture>
+
+  <main>
+    <div class="main-top">
+      <picture>
+        <img src="images/illustration-2.svg" alt="">
+      </picture>
+      <div class="main-top-text">
+        <section class="main-text-container flex-center">
+          <h2>Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.
+          </p>
+          <p>
+            Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!
+          </p>
+          <div class="link-container flex-center">
+            <a href="#" onclick="return false;">See how Fylo works<img src="images/icon-arrow.svg" width="20px"
+                height="20px"></a>
+          </div>
+        </section>
+        <div class="main-card-container flex-center">
+          <img src="images/icon-quotes.svg" alt="quotes">
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="main-card-user">
+            <img src="images/avatar-testimonial.jpg" alt="">
+            <section class="testimonial-text">
+              <h3>
+                Kyle Burton
+              </h3>
+              <small>
+                Founder & CEO, Huddle
+              </small>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-bottom flex-center">
+      <section class="main-bottom-text">
+        <h4>
+          Get early access today
+        </h4>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </section>
+      <form class="flex-center">
+        <div class="input-container">
+          <input id="main-input" type="text" placeholder="email@example.com">
+          <div id="main-email-error" class="email-message remove">Please check your email</div>
+        </div>
+        <button id="main-btn">
+          Get Started For Free
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-1">
+      <div class="footer-img">
+        <img src="images/logo-white.svg" alt="fylo logo">
+      </div>
+      <div class="footer-phone">
+        <img src="images/icon-phone.svg" alt="telephone icon">
+        <p>
+          Phone: +1-543-123-4567
+        </p>
+      </div>
+      <div class="footer-email">
+        <img src="images/icon-email.svg" alt="email icon">
+        <p>
+          example@fylo.com
+        </p>
+      </div>
+    </div>
+    <div class="footer-2">
+      <ul>
+        <li>About us</li>
+        <li>Jobs</li>
+        <li>Press</li>
+        <li>Blog</li>
+      </ul>
+      <ul>
+        <li>Contact Us</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+    <div class="footer-3 flex-center">
+      <ul>
+        <li class="flex-center"><i class="fa-brands fa-facebook-f"></i></li>
+        <li class="flex-center"><i class="fa-brands fa-twitter"></i></li>
+        <li class="flex-center"><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/00e7c94ae3.js" crossorigin="anonymous"></script>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a class="a-tags" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a class="a-tags" href="https://sebframpton.github.io/">Sebastian Frampton</a>.
+    </p>
+  </footer>
+</body>
+</html>
